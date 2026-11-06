@@ -3,7 +3,8 @@
   "range": ">=0.2.1-rc.1 <0.3.0-0",
   "verifiedBuilds": {
     "0.2.1-rc.1": "ed75efeffee65f9fe93625bbd76a68cb219aaaf9",
-    "0.2.1-rc.2": "332895e0f7c9d4dbfb29729f5eb367fa263ff986"
+    "0.2.1-rc.2": "332895e0f7c9d4dbfb29729f5eb367fa263ff986",
+    "0.2.1-rc.5": "d4db512a969fccf0c5cc7ec8fe38e9c1d27af916"
   },
   "fingerprints": {
     "@deepseek-ai/dsh-api-session-controller/lib/index.js": "a9801acb577b03053c5d5a3191ff555c5f1d791d0acddec113bea4511e33b386",

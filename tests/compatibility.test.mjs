@@ -28,3 +28,10 @@ test('startup lists missing controller and resume capabilities before opening IP
     return true;
   });
 });
+
+test('accepted rc.5 build is pinned to its exact commit', () => {
+  const runtime = { name: '@deepseek-ai/dsh-desktop', version: '0.2.1-rc.5', dshBuildCommit: 'd4db512a969fccf0c5cc7ec8fe38e9c1d27af916' };
+  const changedModule = () => Buffer.from('different adapter');
+  assert.equal(verifyRuntimeCompatibility(runtime, changedModule).status, 'verified-build');
+  assert.throws(() => verifyRuntimeCompatibility({ ...runtime, dshBuildCommit: 'another-build' }, changedModule), /adapter code changed/);
+});
